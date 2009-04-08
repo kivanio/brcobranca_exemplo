@@ -1,0 +1,9 @@
+
+<fieldset><br/>
+  <legend>Geração do Boleto</legend>
+  <% form_for "boleto", :url => "/home/gerar_boleto/#{banco}"  do %>
+    Selecione o formato desejado: <%= select 'boleto','formato', @formatos %>
+    <%= submit_tag 'Gerar' %>
+  <% end  %>
+
+</fieldset>

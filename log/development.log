@@ -1,0 +1,449 @@
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 15:48:19) [GET]
+
+NameError (uninitialized constant Brcobranca::Boleto::Template::Rghost::Document):
+  brcobranca (3.0.0) lib/brcobranca/boleto/template/rghost.rb:8:in `modelo_generico'
+  brcobranca (3.0.0) lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (78.3ms)
+Rendered rescues/_request_and_response (3.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 15:53:16) [GET]
+
+NameError (uninitialized constant Brcobranca::Boleto::Template::Rghost::Document):
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:8:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (84.6ms)
+Rendered rescues/_request_and_response (4.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:06:21) [GET]
+
+NameError (uninitialized constant Brcobranca::Boleto::Template::Rghost::Document):
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:8:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (76.2ms)
+Rendered rescues/_request_and_response (3.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:08:05) [GET]
+
+NameError (undefined local variable or method `template' for #<BancoBrasil:0x3a88c04>):
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:20:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (3.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:10:07) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:123:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (90.1ms)
+Rendered rescues/_request_and_response (3.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:16:02) [GET]
+
+NameError (undefined local variable or method `logo' for #<BancoBrasil:0x3a887a4>):
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:61:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (74.7ms)
+Rendered rescues/_request_and_response (3.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:16:37) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:123:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (3.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:24:21) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:123:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (86.5ms)
+Rendered rescues/_request_and_response (4.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:32:51) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:123:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (85.1ms)
+Rendered rescues/_request_and_response (4.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 16:33:11) [GET]
+
+NameError (uninitialized constant HomeController::Itau):
+  app/controllers/home_controller.rb:34:in `itau'
+
+Rendered rescues/_trace (69.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:33:18) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:123:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:34:47) [GET]
+
+RuntimeError (Não foi possível encontrar o template. Verifique o caminho):
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:18:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:135:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (78.5ms)
+Rendered rescues/_request_and_response (4.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:53:29) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:125:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:132:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (85.1ms)
+Rendered rescues/_request_and_response (3.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 16:57:19) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:125:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:132:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (84.6ms)
+Rendered rescues/_request_and_response (3.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 17:17:03) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:125:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:132:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (85.3ms)
+Rendered rescues/_request_and_response (3.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 17:18:58) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:125:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:132:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (85.2ms)
+Rendered rescues/_request_and_response (3.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 17:20:04) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:125:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:132:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (85.7ms)
+Rendered rescues/_request_and_response (4.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 17:20:08) [GET]
+Sending data boletoitau.pdf
+Completed in 834ms (View: 4, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 17:20:10) [GET]
+Sending data boletoitau.pdf
+Completed in 556ms (View: 2, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 17:20:46) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:125:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:132:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 17:29:13) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:125:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:132:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (85.6ms)
+Rendered rescues/_request_and_response (4.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 17:29:18) [GET]
+Sending data boletoitau.pdf
+Completed in 1376ms (View: 3, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 17:29:20) [GET]
+Sending data boletoitau.pdf
+Completed in 1220ms (View: 2, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 17:29:44) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.readlines):
+  rghost (0.8.6.3) lib/rghost/document.rb:255:in `render_stream'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/template/rghost.rb:125:in `modelo_generico'
+  brcobranca (3.0.0) [v] lib/brcobranca/boleto/base.rb:132:in `to_pdf'
+  app/controllers/home_controller.rb:28:in `index'
+
+Rendered rescues/_trace (85.6ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 20:34:06) [GET]
+Sending data boletobb.pdf
+Completed in 4064ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 20:34:14) [GET]
+Sending data boletobb.pdf
+Completed in 1348ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 20:34:45) [GET]
+Sending data boletoitau.pdf
+Completed in 1257ms (View: 3, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 20:34:47) [GET]
+Sending data boletoitau.pdf
+Completed in 1350ms (View: 4, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 20:35:55) [GET]
+Sending data boletobb.pdf
+Completed in 1190ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-02 20:35:57) [GET]
+Sending data boletobb.pdf
+Completed in 1189ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 20:35:59) [GET]
+Sending data boletoitau.pdf
+Completed in 1196ms (View: 2, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-02 20:36:01) [GET]
+Sending data boletoitau.pdf
+Completed in 1534ms (View: 2, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-03 10:48:31) [GET]
+Sending data boletobb.pdf
+Completed in 4461ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-03 10:48:43) [GET]
+Sending data boletobb.pdf
+Completed in 1361ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-03 10:49:01) [GET]
+Sending data boletoitau.pdf
+Completed in 1435ms (View: 3, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-03 10:49:03) [GET]
+Sending data boletoitau.pdf
+Completed in 1556ms (View: 4, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-03 10:51:27) [GET]
+Rendering home/index
+Completed in 46ms (View: 42, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#bb (for 127.0.0.1 at 2009-04-03 10:51:51) [GET]
+Sending data boletobb.pdf
+Completed in 1649ms (View: 2, DB: 0) | 200 OK [http://localhost/home/bb]
+
+
+Processing HomeController#bb (for 127.0.0.1 at 2009-04-03 10:51:53) [GET]
+Sending data boletobb.pdf
+Completed in 1898ms (View: 3, DB: 0) | 200 OK [http://localhost/home/bb]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-03 10:51:55) [GET]
+Sending data boletoitau.pdf
+Completed in 2330ms (View: 3, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-03 10:51:57) [GET]
+Sending data boletoitau.pdf
+Completed in 1607ms (View: 3, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-03 10:52:46) [GET]
+Rendering home/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-03 10:53:09) [GET]
+Rendering home/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-03 17:35:32) [GET]
+Rendering home/index
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#hsbc (for 127.0.0.1 at 2009-04-03 17:35:34) [GET]
+Sending data boletoitau.pdf
+Completed in 2079ms (View: 3, DB: 0) | 200 OK [http://localhost/home/hsbc]
+
+
+Processing HomeController#hsbc (for 127.0.0.1 at 2009-04-03 17:35:37) [GET]
+Sending data boletoitau.pdf
+Completed in 1569ms (View: 3, DB: 0) | 200 OK [http://localhost/home/hsbc]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-03 20:53:33) [GET]
+Rendering home/index
+Completed in 63ms (View: 60, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#bb (for 127.0.0.1 at 2009-04-03 20:53:34) [GET]
+
+NoMethodError (undefined method `nosso_numero=' for #<BancoBrasil:0x38bb55c>):
+  app/controllers/home_controller.rb:19:in `bb'
+
+Rendered rescues/_trace (249.1ms)
+Rendered rescues/_request_and_response (3.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#bb (for 127.0.0.1 at 2009-04-03 20:56:54) [GET]
+Sending data boletobb.pdf
+Completed in 3951ms (View: 8, DB: 0) | 200 OK [http://localhost/home/bb]
+
+
+Processing HomeController#bb (for 127.0.0.1 at 2009-04-03 20:57:02) [GET]
+Sending data boletobb.pdf
+Completed in 2588ms (View: 2, DB: 0) | 200 OK [http://localhost/home/bb]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-03 20:57:27) [GET]
+Sending data boletoitau.pdf
+Completed in 1138ms (View: 2, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#itau (for 127.0.0.1 at 2009-04-03 20:57:28) [GET]
+Sending data boletoitau.pdf
+Completed in 1461ms (View: 1, DB: 0) | 200 OK [http://localhost/home/itau]
+
+
+Processing HomeController#hsbc (for 127.0.0.1 at 2009-04-03 20:57:29) [GET]
+Sending data boletohsbc.pdf
+Completed in 1200ms (View: 2, DB: 0) | 200 OK [http://localhost/home/hsbc]
+
+
+Processing HomeController#hsbc (for 127.0.0.1 at 2009-04-03 20:57:31) [GET]
+Sending data boletohsbc.pdf
+Completed in 1153ms (View: 2, DB: 0) | 200 OK [http://localhost/home/hsbc]
+
+
+Processing HomeController#hsbc (for 127.0.0.1 at 2009-04-03 21:03:33) [GET]
+Sending data boletohsbc.pdf
+Completed in 1203ms (View: 3, DB: 0) | 200 OK [http://localhost/home/hsbc]
+
+
+Processing HomeController#hsbc (for 127.0.0.1 at 2009-04-03 21:03:35) [GET]
+Sending data boletohsbc.pdf
+Completed in 1391ms (View: 2, DB: 0) | 200 OK [http://localhost/home/hsbc]

@@ -1,0 +1,375 @@
+/*  
+Theme Name: Corporate
+Description: The Corporate wordpress theme. Cross-browser, XHTML Strict v1.0 and CSS 2.1 valid. Great for businesses, corporate blogs and web sites. Comes with customizable intro text, for information read Instructions.txt. NOTICE: This version contains a few critical bug fixes, so make sure you have the latest version.
+Version: 1.4.1
+Author: Ori Pearl
+Author URI: http://www.oripearl.com/
+Tags: business, corporate, xhtml, css, simple, clean, clear, white, grey, orange, fixed width, intro, banner, widget-ready, widgets, right sidebar, two columns, valid XHTML, valid CSS, blueprint, blueprintcss
+*/
+
+body
+{
+	background: #666666 url('/images/bodybg.jpg') repeat-x 0 0;
+	font-size: 11px;
+	color: #525252;
+}
+
+h2, a
+{
+	color: #525252;
+}
+
+pre, code {white-space: normal;}
+
+
+#top
+{
+
+	text-align: right;
+	height: 24px;
+}
+
+#top .menu
+{
+	padding-top: 7px;
+}
+
+#top .menu li
+{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+#top .menu a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+#top .menu a:hover
+{
+	color: #000;
+}
+
+#contenttop
+{
+	background: transparent url('/images/topbg.png') no-repeat 0 0;
+	height: 37px;
+}
+
+#contentwrapper
+{
+	background: transparent url('/images/contentbg.png') repeat-y 0 0;
+
+}
+
+#header
+{
+	height: 50px;
+}
+
+#header #title
+{
+	
+}
+
+#header #title .logo
+{
+	float: left;
+}
+
+#header #title #blogtitle
+{
+	margin-left: 68px;
+}
+
+#header #title h1
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: #525252;
+	margin-bottom: 5px;
+}
+
+#header #title h2
+{
+	font-size: 14px;
+	color: #525252;
+}
+
+#header #searchbar
+{
+	margin-top: 20px;
+}
+
+#introcontainer
+{
+	margin-top: 40px;
+}
+
+#intro
+{
+	
+	height: 200px;
+	background: url('/images/introbg.jpg') no-repeat 0 0;
+	margin-left: 7px;
+}
+
+
+#intro #introtext
+{
+	float: left;
+	height: 165px;
+	margin: 20px auto auto 20px;
+	overflow: hidden;
+}
+
+
+#intro #introtext h1
+{
+	font-size: 18px;
+	color: #00599d;
+	margin-bottom: 16px;
+}
+
+#intro #introtext p
+{
+	font-size: 16px;
+}
+
+#intro #introicon
+{
+	float: right;
+	margin: 35px 50px;
+}
+
+.post
+{
+	background: #fafafa;
+	border: solid 1px #eeeeee;
+	margin: 40px 5px 20px 5px;	
+	padding: 15px;	
+	_padding: 7px;
+}
+
+.post .postheader .commentcount
+{
+	width: 27px;
+	line-height: 12px;
+	float: left;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.post .postheader .commentcount a
+{
+	text-decoration: none;
+	color: #4884bc;
+}
+
+.post .postheader .posttitle
+{
+	
+	line-height: 20px;
+}
+
+.post .postheader .posttitle h2
+{
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.post .postheader h2 a
+{
+	text-decoration: none;
+}
+
+.post .postheader .posttitle .postmeta
+{
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 11px;
+}
+
+.post .postcontent
+{
+	margin-top: 20px;
+	line-height: 17px;
+}
+
+.post .postcontent p
+{
+	margin-bottom: 10px;
+}
+
+.post .posttags, .post .posttags a
+{
+	color: #959595;
+	clear:both;
+	margin-top: 20px;
+	text-align: right;
+}
+
+.commentbox
+{
+	background: #fff;
+	border: solid 1px #eeeeee;
+	margin: 10px 5px 20px 5px;
+	padding: 15px;
+	_padding: 7px;
+}
+
+.commentmeta .avatar
+{
+	float: left;
+	padding-right: 6px;
+	_padding-right: 3px;
+}
+
+.commenttext
+{
+	clear: both;
+	margin-top: 10px;
+}
+
+.commentform input
+{
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+
+#commentform .text {
+	width: 300px;
+    margin: 0 0 15px 0;
+}
+
+#commentform textarea
+{
+    width:450px;
+    height:150px;
+    margin:0;
+    padding:5px;
+}
+
+.navlinks
+{
+	margin: 0px 5px 40px 5px;	
+}
+
+.navlinks a
+{
+	text-decoration: none;
+}
+
+.navlinks img
+{
+	margin-right: 5px;
+}
+
+#sidebar #wrapbox
+{
+	background: #fafafa;
+	border: solid 1px #eeeeee;	
+	padding: 17px;
+	margin: 40px 5px 20px 5px;
+	_margin: 40px 0px 20px 0px;
+}
+
+#sidebar .sidebarbox
+{
+	line-height: 20px;
+	margin-bottom: 40px;
+}
+
+#sidebar .sidebarbox h3
+{
+	font-size: 14px;
+	color: #e65a05;
+	margin-bottom: 10px;
+}
+
+#sidebar .sidebarbox a
+{
+	text-decoration: none;
+}
+
+#sidebar .sidebarbox ul
+{
+	list-style-type: none;
+	text-indent: -1.5em;
+}
+
+#sidebar .sidebarbox .pages ul
+{
+	text-indent: -3em;
+}
+
+#footer
+{
+	height: 52px;
+	background: url('/images/bottombg.png') no-repeat 0 0;
+}
+
+
+
+.searchform #searchbox
+{
+	float: left;
+	background: #f1f1f1;
+	border: solid 1px #e3e3e3;
+	width: 120px;
+	height: 14px;
+	font-size: 11px;
+}
+
+.searchform #searchbutton
+{
+	height: 18px;
+	width: 18px;
+	margin-left: 6px;
+	border: none;
+	cursor: pointer;
+	background: url('/images/searchbutton.jpg') no-repeat 0 0;
+}
+
+/*** Wordpress ***/
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+   margin: 0 10px 10px 0;
+}
+
+.alignright {
+   float: right;
+   margin: 0 0 10px 10px;
+}
+
+.wp-caption {
+   background: #fafafa;
+   border: solid 1px #eeeeee;
+   text-align: center;
+   padding-top: 4px;
+}
+
+.wp-caption img {
+   float: none;
+   margin: 0;
+   padding: 0;
+   border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+   font-size: 11px;
+   line-height: 17px;
+   padding: 0px;
+   margin: 0px;
+}
