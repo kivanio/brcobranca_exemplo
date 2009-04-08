@@ -447,3 +447,502 @@ Completed in 1203ms (View: 3, DB: 0) | 200 OK [http://localhost/home/hsbc]
 Processing HomeController#hsbc (for 127.0.0.1 at 2009-04-03 21:03:35) [GET]
 Sending data boletohsbc.pdf
 Completed in 1391ms (View: 2, DB: 0) | 200 OK [http://localhost/home/hsbc]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 10:51:33) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (355.4ms)
+Rendered home/_itau (599.1ms)
+Rendered home/_form (1.1ms)
+Rendered home/_bb (4.9ms)
+Rendered home/_form (1.0ms)
+Rendered home/_hsbc (4.1ms)
+Completed in 659ms (View: 655, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 10:51:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/thumb_itau.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 10:51:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/thumb_bb.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 10:51:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/thumb_hsbc.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 10:51:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/topbg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 10:51:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/bodybg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 10:51:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/contentbg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 10:51:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/bottombg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 10:52:17) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.3ms)
+Rendered home/_itau (2.0ms)
+Rendered home/_form (1.4ms)
+Rendered home/_bb (2.0ms)
+Rendered home/_form (0.9ms)
+Rendered home/_hsbc (1.5ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:05:59) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (2.6ms)
+Rendered home/_itau (10.0ms)
+Rendered home/_form (1.0ms)
+Rendered home/_bb (3.7ms)
+Rendered home/_form (0.9ms)
+Rendered home/_hsbc (3.9ms)
+Completed in 44ms (View: 41, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:06:24) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"GDCmtSoicRUrH6+n2SHLN5qggORpRR54hu3ZAYwHPM8=", "id"=>"bb", "boleto"=>{"formato"=>"pdf"}}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_sym):
+  app/controllers/home_controller.rb:14:in `gerar_boleto'
+
+Rendered rescues/_trace (71.9ms)
+Rendered rescues/_request_and_response (3.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:07:43) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.4ms)
+Rendered home/_itau (2.1ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (1.4ms)
+Rendered home/_form (0.9ms)
+Rendered home/_hsbc (1.5ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:09:26) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.4ms)
+Rendered home/_itau (2.4ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (1.5ms)
+Rendered home/_form (0.8ms)
+Rendered home/_hsbc (1.4ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:09:28) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.3ms)
+Rendered home/_itau (2.0ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (1.5ms)
+Rendered home/_form (0.9ms)
+Rendered home/_hsbc (1.5ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:09:30) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.3ms)
+Rendered home/_itau (2.1ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (1.5ms)
+Rendered home/_form (0.8ms)
+Rendered home/_hsbc (1.4ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:09:31) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.7ms)
+Rendered home/_itau (2.5ms)
+Rendered home/_form (1.5ms)
+Rendered home/_bb (2.2ms)
+Rendered home/_form (1.2ms)
+Rendered home/_hsbc (2.0ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:09:39) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.2ms)
+Rendered home/_itau (1.9ms)
+Rendered home/_form (0.8ms)
+Rendered home/_bb (1.4ms)
+Rendered home/_form (0.8ms)
+Rendered home/_hsbc (1.4ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:09:49) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"GDCmtSoicRUrH6+n2SHLN5qggORpRR54hu3ZAYwHPM8=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"itau"}
+Sending data boleto_itau.pdf
+Completed in 4676ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+/!\ FAILSAFE /!\  Wed Apr 08 11:12:51 -0400 2009
+  Status: 500 Internal Server Error
+  undefined method `i' for main:Object
+    /Users/kivanio/Sites/eiq/brcobranca_exemplo/config/routes.rb:2
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:226:in `draw'
+    /Users/kivanio/Sites/eiq/brcobranca_exemplo/config/routes.rb:1
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:8:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+    /Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-08 11:13:05) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:13:24) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.2ms)
+Rendered home/_itau (2.0ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (1.5ms)
+Rendered home/_form (0.9ms)
+Rendered home/_hsbc (1.4ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:13:38) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"bb"}
+Sending data boleto_bb.pdf
+Completed in 1324ms (View: 3, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/bb]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:13:55) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"gif"}, "banco"=>"bb"}
+
+RuntimeError (Undefined device: gif):
+  rghost (0.8.6.3) lib/rghost/constants.rb:154:in `device_for'
+  rghost (0.8.6.3) lib/rghost/ruby_ghost_engine.rb:42:in `render'
+  rghost (0.8.6.3) lib/rghost/document.rb:234:in `render'
+  rghost (0.8.6.3) lib/rghost/document.rb:254:in `render_stream'
+  brcobranca (2.0.0) lib/brcobranca/boleto/template/rghost.rb:131:in `modelo_generico'
+  brcobranca (2.0.0) lib/brcobranca/boleto/base.rb:142:in `to'
+  app/controllers/home_controller.rb:89:in `gerar_boleto'
+
+Rendered rescues/_trace (85.1ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:14:40) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"jpg"}, "banco"=>"bb"}
+Sending data boleto_bb.jpg
+Completed in 1145ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/bb]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:15:18) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"png"}, "banco"=>"bb"}
+Sending data boleto_bb.png
+Completed in 1268ms (View: 3, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/bb]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:15:37) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"tif"}, "banco"=>"bb"}
+Sending data boleto_bb.tif
+Completed in 1090ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/bb]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:16:31) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"gif"}, "banco"=>"bb"}
+
+RuntimeError (Undefined device: gif):
+  rghost (0.8.6.3) lib/rghost/constants.rb:154:in `device_for'
+  rghost (0.8.6.3) lib/rghost/ruby_ghost_engine.rb:42:in `render'
+  rghost (0.8.6.3) lib/rghost/document.rb:234:in `render'
+  rghost (0.8.6.3) lib/rghost/document.rb:254:in `render_stream'
+  brcobranca (2.0.0) lib/brcobranca/boleto/template/rghost.rb:131:in `modelo_generico'
+  brcobranca (2.0.0) lib/brcobranca/boleto/base.rb:142:in `to'
+  app/controllers/home_controller.rb:89:in `gerar_boleto'
+
+Rendered rescues/_trace (82.4ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:28:00) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (5.6ms)
+Rendered home/_itau (211.2ms)
+Rendered home/_form (3.4ms)
+Rendered home/_bb (23.6ms)
+Rendered home/_form (1.1ms)
+Rendered home/_hsbc (17.6ms)
+Completed in 381ms (View: 376, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:28:09) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"jpg"}, "banco"=>"itau"}
+Sending data boleto_itau.jpg
+Completed in 4863ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:28:21) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"itau"}
+Sending data boleto_itau.pdf
+Completed in 2134ms (View: 3, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:28:29) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"png"}, "banco"=>"itau"}
+Sending data boleto_itau.png
+Completed in 1693ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:28:35) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"tif"}, "banco"=>"itau"}
+Sending data boleto_itau.tif
+Completed in 1997ms (View: 4, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:29:09) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"jpg"}, "banco"=>"hsbc"}
+Sending data boleto_hsbc.jpg
+Completed in 1401ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/hsbc]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:29:16) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"hsbc"}
+Sending data boleto_hsbc.pdf
+Completed in 1952ms (View: 4, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/hsbc]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:29:24) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"png"}, "banco"=>"hsbc"}
+Sending data boleto_hsbc.png
+Completed in 1915ms (View: 3, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/hsbc]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 11:29:31) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"tif"}, "banco"=>"hsbc"}
+Sending data boleto_hsbc.tif
+Completed in 1438ms (View: 3, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/hsbc]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:35:07) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.8ms)
+Rendered home/_itau (2.6ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (1.6ms)
+Rendered home/_form (0.9ms)
+Rendered home/_hsbc (1.5ms)
+
+ActionView::TemplateError (Missing template home/_head.erb in view path app/views) on line #1 of app/views/layouts/brlayout.html.erb:
+1: <%= render :partial => 'head' %>
+2: 
+3: <body>
+4: 	<div class="container">
+
+    app/views/layouts/brlayout.html.erb:1
+
+Rendered rescues/_trace (392.4ms)
+Rendered rescues/_request_and_response (3.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:35:24) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.5ms)
+Rendered home/_itau (2.4ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (1.5ms)
+Rendered home/_form (0.8ms)
+Rendered home/_hsbc (1.3ms)
+Rendered home/_head (2.9ms)
+Rendered home/_sidebar (3.2ms)
+Rendered home/_rodape (1.0ms)
+Completed in 40ms (View: 37, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:36:22) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.2ms)
+Rendered home/_itau (1.9ms)
+Rendered home/_form (1.0ms)
+Rendered home/_bb (1.6ms)
+Rendered home/_form (0.8ms)
+Rendered home/_hsbc (1.3ms)
+Rendered home/_head (0.9ms)
+Rendered home/_sidebar (0.1ms)
+Rendered home/_rodape (0.1ms)
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:39:03) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.2ms)
+Rendered home/_itau (1.9ms)
+Rendered home/_form (0.8ms)
+Rendered home/_bb (1.3ms)
+Rendered home/_form (0.8ms)
+Rendered home/_hsbc (1.3ms)
+Rendered home/_head (0.8ms)
+Rendered home/_sidebar (3.1ms)
+Rendered home/_rodape (0.1ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:42:28) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.4ms)
+Rendered home/_itau (2.1ms)
+Rendered home/_form (0.8ms)
+Rendered home/_bb (1.5ms)
+Rendered home/_form (1.0ms)
+Rendered home/_hsbc (1.6ms)
+Rendered home/_head (0.8ms)
+Rendered home/_sidebar (3.3ms)
+Rendered home/_rodape (0.2ms)
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:45:42) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.2ms)
+Rendered home/_itau (2.0ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (1.5ms)
+Rendered home/_form (0.8ms)
+Rendered home/_hsbc (1.4ms)
+Rendered home/_head (0.8ms)
+Rendered home/_sidebar (3.3ms)
+Rendered home/_rodape (0.1ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 11:53:56) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (4.2ms)
+Rendered home/_itau (248.5ms)
+Rendered home/_form (1.0ms)
+Rendered home/_bb (14.9ms)
+Rendered home/_form (3.1ms)
+Rendered home/_hsbc (21.4ms)
+Rendered home/_head (3.0ms)
+Rendered home/_sidebar (3.8ms)
+Rendered home/_rodape (1.1ms)
+Completed in 372ms (View: 368, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 12:01:36) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (3.3ms)
+Rendered home/_itau (186.7ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (3.8ms)
+Rendered home/_form (1.1ms)
+Rendered home/_hsbc (4.3ms)
+Rendered home/_head (3.0ms)
+Rendered home/_sidebar (3.7ms)
+Rendered home/_rodape (1.0ms)
+Completed in 262ms (View: 259, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 12:01:46) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ihr6SBhGkygCvzlRluYpd2XhgbNLqgoasqWb3iyREn8=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"bb"}
+Sending data boleto_bb.pdf
+Completed in 4197ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/bb]

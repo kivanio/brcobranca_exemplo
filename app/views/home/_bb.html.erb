@@ -1,26 +1,19 @@
-
-
-
 <div id="post-19" class="post">
-  <div class="postheader">
-    <div class="commentcount" style="width: 78px;">
-      <a href="#">
-        <div style="border: 1px solid gray; width: 64px;  ">
-
-          <%= image_tag '/images/thumb_bb.png', :width => 64 %>
-        </div>
-      </a>
-    </div>
-    <div class="posttitle" >
-      <h2><a href="http://www.itau.com.br">Banco do Brasil - 001</a></h2>
-      <span class="postmeta">
-      <a href="#">Especificação</a> |  Homologado </span>
-    </div>
-  </div>
-  <div class="postcontent">
-    <%= render :partial => "form", :locals => {:banco => 'bb'} %>
-
-  </div>
+	<div class="postheader">
+		<div class="commentcount" style="width: 78px;">
+			<a href="#">
+				<div style="border: 1px solid gray; width: 64px;">
+				<%= image_tag '/images/thumb_bb.png', :width => 64 %>
+			</div>
+		</a>
+	</div>
+	<div class="posttitle" >
+		<h2><a href="http://www.bb.com.br">Banco do Brasil - 001</a></h2>
+		<span class="postmeta">
+			<a href="#">Especificação</a> |  Homologado </span>
+		</div>
+	</div>
+	<div class="postcontent">
+		<%= render :partial => "form", :locals => {:banco => 'bb'} %>
+	</div>
 </div>
-
-
