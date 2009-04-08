@@ -26,28 +26,25 @@ class HomeController < ApplicationController
     @boleto.sacado_documento = "12345678900"
     @boleto.valor = 11135.00
     @boleto.aceite = "S"
+    @boleto.agencia = "4042"
+    @boleto.conta_corrente = "61900"
 
     case banco
     when :itau
       #     ITAU
-      @boleto.agencia = "0810"
-      @boleto.conta_corrente = "53678"
+      # O que diferencia um tipo de boleto de outro, dentro do itáu é o tipo de carteira utilizado.
       @boleto.convenio = "12345"
       @boleto.numero_documento = "102008"
     when :bb
       # BB
-      @boleto.agencia = "4042"
-      @boleto.conta_corrente = "61900"
+      # O que diferencia um tipo de boleto de outro, dentro do Banco do Brasil é a quantidade de dígitos do convênio.
       @boleto.convenio = "1238798"
       @boleto.numero_documento = "7777700168"
     when :hsbc
       # HSBC
-      @boleto.agencia = "4042"
-      @boleto.conta_corrente = "1122334"
+      # O que diferencia um tipo de boleto de outro, dentro do HSBC é a quantidade de dígitos do número do documento.
       @boleto.numero_documento = "12345678"
     else
-      @boleto.agencia = "0810"
-      @boleto.conta_corrente = "53678"
       @boleto.convenio = "12345"
       @boleto.numero_documento = "102008"
     end

@@ -1,0 +1,27 @@
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-08 13:24:49) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (3.1ms)
+Rendered home/_itau (199.7ms)
+Rendered home/_form (0.9ms)
+Rendered home/_bb (3.9ms)
+Rendered home/_form (0.9ms)
+Rendered home/_hsbc (4.0ms)
+Rendered home/_head (3.2ms)
+Rendered home/_sidebar (3.6ms)
+Rendered home/_rodape (1.0ms)
+Completed in 276ms (View: 273, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 13:26:34) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"LnfnP467rUG7qJtgDxu9jC9jkWNdwFr1obF7SxacaLs=", "boleto"=>{"formato"=>"jpg"}, "banco"=>"itau"}
+Sending data boleto_itau.jpg
+Completed in 1367ms (View: 4, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 13:26:40) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"LnfnP467rUG7qJtgDxu9jC9jkWNdwFr1obF7SxacaLs=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"itau"}
+Sending data boleto_itau.pdf
+Completed in 1437ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
