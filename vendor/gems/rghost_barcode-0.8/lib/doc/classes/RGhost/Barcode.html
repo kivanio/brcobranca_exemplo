@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: RGhost::Barcode</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">RGhost::Barcode</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../files/rghost_barcode/rghost_barcode_base_rb.html">
+                rghost_barcode/rghost_barcode_base.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+    <div id="class-list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Class <a href="Barcode/Auspost.html" class="link">RGhost::Barcode::Auspost</a><br />
+Class <a href="Barcode/Azteccode.html" class="link">RGhost::Barcode::Azteccode</a><br />
+Class <a href="Barcode/Base.html" class="link">RGhost::Barcode::Base</a><br />
+Class <a href="Barcode/Border.html" class="link">RGhost::Barcode::Border</a><br />
+Class <a href="Barcode/Code11.html" class="link">RGhost::Barcode::Code11</a><br />
+Class <a href="Barcode/Code128.html" class="link">RGhost::Barcode::Code128</a><br />
+Class <a href="Barcode/Code2of5.html" class="link">RGhost::Barcode::Code2of5</a><br />
+Class <a href="Barcode/Code39.html" class="link">RGhost::Barcode::Code39</a><br />
+Class <a href="Barcode/Code93.html" class="link">RGhost::Barcode::Code93</a><br />
+Class <a href="Barcode/Datamatrix.html" class="link">RGhost::Barcode::Datamatrix</a><br />
+Class <a href="Barcode/Ean13.html" class="link">RGhost::Barcode::Ean13</a><br />
+Class <a href="Barcode/Ean2.html" class="link">RGhost::Barcode::Ean2</a><br />
+Class <a href="Barcode/Ean5.html" class="link">RGhost::Barcode::Ean5</a><br />
+Class <a href="Barcode/Ean8.html" class="link">RGhost::Barcode::Ean8</a><br />
+Class <a href="Barcode/Guard.html" class="link">RGhost::Barcode::Guard</a><br />
+Class <a href="Barcode/Interleaved2of5.html" class="link">RGhost::Barcode::Interleaved2of5</a><br />
+Class <a href="Barcode/Isbn.html" class="link">RGhost::Barcode::Isbn</a><br />
+Class <a href="Barcode/Kix.html" class="link">RGhost::Barcode::Kix</a><br />
+Class <a href="Barcode/Maxicode.html" class="link">RGhost::Barcode::Maxicode</a><br />
+Class <a href="Barcode/Msi.html" class="link">RGhost::Barcode::Msi</a><br />
+Class <a href="Barcode/Onecode.html" class="link">RGhost::Barcode::Onecode</a><br />
+Class <a href="Barcode/Parameter.html" class="link">RGhost::Barcode::Parameter</a><br />
+Class <a href="Barcode/Pdf417.html" class="link">RGhost::Barcode::Pdf417</a><br />
+Class <a href="Barcode/Pharmacode.html" class="link">RGhost::Barcode::Pharmacode</a><br />
+Class <a href="Barcode/Plessey.html" class="link">RGhost::Barcode::Plessey</a><br />
+Class <a href="Barcode/Postnet.html" class="link">RGhost::Barcode::Postnet</a><br />
+Class <a href="Barcode/Qrcode.html" class="link">RGhost::Barcode::Qrcode</a><br />
+Class <a href="Barcode/Rationalizedcodabar.html" class="link">RGhost::Barcode::Rationalizedcodabar</a><br />
+Class <a href="Barcode/Raw.html" class="link">RGhost::Barcode::Raw</a><br />
+Class <a href="Barcode/Royalmail.html" class="link">RGhost::Barcode::Royalmail</a><br />
+Class <a href="Barcode/Rss14.html" class="link">RGhost::Barcode::Rss14</a><br />
+Class <a href="Barcode/Rssexpanded.html" class="link">RGhost::Barcode::Rssexpanded</a><br />
+Class <a href="Barcode/Rsslimited.html" class="link">RGhost::Barcode::Rsslimited</a><br />
+Class <a href="Barcode/Symbol.html" class="link">RGhost::Barcode::Symbol</a><br />
+Class <a href="Barcode/Text.html" class="link">RGhost::Barcode::Text</a><br />
+Class <a href="Barcode/Upca.html" class="link">RGhost::Barcode::Upca</a><br />
+Class <a href="Barcode/Upce.html" class="link">RGhost::Barcode::Upce</a><br />
+
+    </div>
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

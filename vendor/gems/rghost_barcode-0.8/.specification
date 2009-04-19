@@ -1,0 +1,221 @@
+--- !ruby/object:Gem::Specification 
+name: rghost_barcode
+version: !ruby/object:Gem::Version 
+  version: "0.8"
+platform: ruby
+authors: 
+- Shairon Toledo and Terry Burton
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2008-06-17 00:00:00 -04:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: rghost
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.8.0
+    version: 
+description: 
+email: shairon.toledo@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- lib/teste_main.rb
+- lib/doc
+- lib/doc/classes
+- lib/doc/classes/RGhost
+- lib/doc/classes/RGhost/Config.src
+- lib/doc/classes/RGhost/Config.src/M000016.html
+- lib/doc/classes/RGhost/Barcode
+- lib/doc/classes/RGhost/Barcode/Interleaved2of5.html
+- lib/doc/classes/RGhost/Barcode/Rationalizedcodabar.html
+- lib/doc/classes/RGhost/Barcode/Pharmacode.html
+- lib/doc/classes/RGhost/Barcode/Parameter.html
+- lib/doc/classes/RGhost/Barcode/Border.html
+- lib/doc/classes/RGhost/Barcode/Border.src
+- lib/doc/classes/RGhost/Barcode/Border.src/M000001.html
+- lib/doc/classes/RGhost/Barcode/Base.src
+- lib/doc/classes/RGhost/Barcode/Base.src/M000005.html
+- lib/doc/classes/RGhost/Barcode/Base.src/M000006.html
+- lib/doc/classes/RGhost/Barcode/Base.src/M000004.html
+- lib/doc/classes/RGhost/Barcode/Royalmail.html
+- lib/doc/classes/RGhost/Barcode/Base.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000015.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000012.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000013.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000007.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000011.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000014.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000010.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000009.html
+- lib/doc/classes/RGhost/Barcode/Parameter.src/M000008.html
+- lib/doc/classes/RGhost/Barcode/Pdf417.html
+- lib/doc/classes/RGhost/Barcode/Plessey.html
+- lib/doc/classes/RGhost/Barcode/Guard.src
+- lib/doc/classes/RGhost/Barcode/Guard.src/M000003.html
+- lib/doc/classes/RGhost/Barcode/Isbn.html
+- lib/doc/classes/RGhost/Barcode/Azteccode.html
+- lib/doc/classes/RGhost/Barcode/Raw.html
+- lib/doc/classes/RGhost/Barcode/Text.src
+- lib/doc/classes/RGhost/Barcode/Text.src/M000002.html
+- lib/doc/classes/RGhost/Barcode/Postnet.html
+- lib/doc/classes/RGhost/Barcode/Maxicode.html
+- lib/doc/classes/RGhost/Barcode/Text.html
+- lib/doc/classes/RGhost/Barcode/Ean13.html
+- lib/doc/classes/RGhost/Barcode/Msi.html
+- lib/doc/classes/RGhost/Barcode/Code2of5.html
+- lib/doc/classes/RGhost/Barcode/Upca.html
+- lib/doc/classes/RGhost/Barcode/Ean5.html
+- lib/doc/classes/RGhost/Barcode/Ean8.html
+- lib/doc/classes/RGhost/Barcode/Auspost.html
+- lib/doc/classes/RGhost/Barcode/Rssexpanded.html
+- lib/doc/classes/RGhost/Barcode/Code39.html
+- lib/doc/classes/RGhost/Barcode/Symbol.html
+- lib/doc/classes/RGhost/Barcode/Code128.html
+- lib/doc/classes/RGhost/Barcode/Onecode.html
+- lib/doc/classes/RGhost/Barcode/Rss14.html
+- lib/doc/classes/RGhost/Barcode/Ean2.html
+- lib/doc/classes/RGhost/Barcode/Kix.html
+- lib/doc/classes/RGhost/Barcode/Datamatrix.html
+- lib/doc/classes/RGhost/Barcode/Code11.html
+- lib/doc/classes/RGhost/Barcode/Code93.html
+- lib/doc/classes/RGhost/Barcode/Guard.html
+- lib/doc/classes/RGhost/Barcode/Qrcode.html
+- lib/doc/classes/RGhost/Barcode/Rsslimited.html
+- lib/doc/classes/RGhost/Barcode/Upce.html
+- lib/doc/classes/RGhost/Barcode.html
+- lib/doc/classes/RGhost/Document.html
+- lib/doc/classes/RGhost/Config.html
+- lib/doc/classes/RGhost/Document.src
+- lib/doc/classes/RGhost/Document.src/M000026.html
+- lib/doc/classes/RGhost/Document.src/M000046.html
+- lib/doc/classes/RGhost/Document.src/M000022.html
+- lib/doc/classes/RGhost/Document.src/M000027.html
+- lib/doc/classes/RGhost/Document.src/M000044.html
+- lib/doc/classes/RGhost/Document.src/M000018.html
+- lib/doc/classes/RGhost/Document.src/M000042.html
+- lib/doc/classes/RGhost/Document.src/M000030.html
+- lib/doc/classes/RGhost/Document.src/M000036.html
+- lib/doc/classes/RGhost/Document.src/M000023.html
+- lib/doc/classes/RGhost/Document.src/M000031.html
+- lib/doc/classes/RGhost/Document.src/M000032.html
+- lib/doc/classes/RGhost/Document.src/M000019.html
+- lib/doc/classes/RGhost/Document.src/M000043.html
+- lib/doc/classes/RGhost/Document.src/M000048.html
+- lib/doc/classes/RGhost/Document.src/M000037.html
+- lib/doc/classes/RGhost/Document.src/M000039.html
+- lib/doc/classes/RGhost/Document.src/M000041.html
+- lib/doc/classes/RGhost/Document.src/M000024.html
+- lib/doc/classes/RGhost/Document.src/M000029.html
+- lib/doc/classes/RGhost/Document.src/M000033.html
+- lib/doc/classes/RGhost/Document.src/M000038.html
+- lib/doc/classes/RGhost/Document.src/M000025.html
+- lib/doc/classes/RGhost/Document.src/M000040.html
+- lib/doc/classes/RGhost/Document.src/M000035.html
+- lib/doc/classes/RGhost/Document.src/M000021.html
+- lib/doc/classes/RGhost/Document.src/M000028.html
+- lib/doc/classes/RGhost/Document.src/M000017.html
+- lib/doc/classes/RGhost/Document.src/M000034.html
+- lib/doc/classes/RGhost/Document.src/M000047.html
+- lib/doc/classes/RGhost/Document.src/M000020.html
+- lib/doc/classes/RGhost/Document.src/M000045.html
+- lib/doc/classes/RGhost.html
+- lib/doc/index.html
+- lib/doc/created.rid
+- lib/doc/files
+- lib/doc/files/rghost_barcode_rb.html
+- lib/doc/files/teste_main_rb.html
+- lib/doc/files/rghost_barcode
+- lib/doc/files/rghost_barcode/rghost_barcode_classes_rb.html
+- lib/doc/files/rghost_barcode/rghost_barcode_version_rb.html
+- lib/doc/files/rghost_barcode/rghost_barcode_base_rb.html
+- lib/doc/files/rghost_barcode/rghost_barcode_examples_rb.html
+- lib/doc/files/rghost_barcode/rghost_barcode_adapter_rb.html
+- lib/doc/fr_class_index.html
+- lib/doc/fr_file_index.html
+- lib/doc/fr_method_index.html
+- lib/rghost_barcode
+- lib/rghost_barcode/rghost_barcode_classes.rb
+- lib/rghost_barcode/rghost_barcode_base.rb
+- lib/rghost_barcode/ps
+- lib/rghost_barcode/ps/isbn.ps
+- lib/rghost_barcode/ps/barcode_template.eps
+- lib/rghost_barcode/ps/code11.ps
+- lib/rghost_barcode/ps/code2of5.ps
+- lib/rghost_barcode/ps/ean8.ps
+- lib/rghost_barcode/ps/postnet.ps
+- lib/rghost_barcode/ps/rssexpanded.ps
+- lib/rghost_barcode/ps/auspost.ps
+- lib/rghost_barcode/ps/code39.ps
+- lib/rghost_barcode/ps/upce.ps
+- lib/rghost_barcode/ps/azteccode.ps
+- lib/rghost_barcode/ps/ean5.ps
+- lib/rghost_barcode/ps/plessey.ps
+- lib/rghost_barcode/ps/render.ps
+- lib/rghost_barcode/ps/raw.ps
+- lib/rghost_barcode/ps/rss14.ps
+- lib/rghost_barcode/ps/royalmail.ps
+- lib/rghost_barcode/ps/datamatrix.ps
+- lib/rghost_barcode/ps/code128.ps
+- lib/rghost_barcode/ps/upca.ps
+- lib/rghost_barcode/ps/qrcode.ps
+- lib/rghost_barcode/ps/maxicode.ps
+- lib/rghost_barcode/ps/rationalizedcodabar.ps
+- lib/rghost_barcode/ps/code93.ps
+- lib/rghost_barcode/ps/msi.ps
+- lib/rghost_barcode/ps/rsslimited.ps
+- lib/rghost_barcode/ps/ean13.ps
+- lib/rghost_barcode/ps/onecode.ps
+- lib/rghost_barcode/ps/ean2.ps
+- lib/rghost_barcode/ps/interleaved2of5.ps
+- lib/rghost_barcode/ps/symbol.ps
+- lib/rghost_barcode/ps/render.ps~
+- lib/rghost_barcode/ps/pdf417.ps
+- lib/rghost_barcode/ps/kix.ps
+- lib/rghost_barcode/ps/pharmacode.ps
+- lib/rghost_barcode/rghost_barcode_examples.rb
+- lib/rghost_barcode/rghost_barcode_version.rb
+- lib/rghost_barcode/rghost_barcode_adapter.rb
+- lib/rghost_barcode.rb
+has_rdoc: true
+homepage: http://www.hashcode.eti.br
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: RGhost adapter to Barcode Writer in Pure PostScript
+rubygems_version: 1.3.2
+signing_key: 
+specification_version: 2
+summary: RGhost adapter to Barcode Writer in Pure PostScript
+test_files: []
+

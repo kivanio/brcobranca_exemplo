@@ -1,0 +1,175 @@
+--- !ruby/object:Gem::Specification 
+name: brcobranca
+version: !ruby/object:Gem::Version 
+  version: 2.0.1
+platform: ruby
+authors: 
+- Kivanio Barbosa
+autorequire: 
+bindir: bin
+cert_chain: 
+- |
+  -----BEGIN CERTIFICATE-----
+  MIIDMDCCAhigAwIBAgIBADANBgkqhkiG9w0BAQUFADA+MRAwDgYDVQQDDAdraXZh
+  bmlvMRUwEwYKCZImiZPyLGQBGRYFZ21haWwxEzARBgoJkiaJk/IsZAEZFgNjb20w
+  HhcNMDkwNDAxMTk1MTEyWhcNMTAwNDAxMTk1MTEyWjA+MRAwDgYDVQQDDAdraXZh
+  bmlvMRUwEwYKCZImiZPyLGQBGRYFZ21haWwxEzARBgoJkiaJk/IsZAEZFgNjb20w
+  ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC9romqf+5VfVc8BnlDKqpZ
+  nrwYaPq6Z2hom3hYZnLseJUQ4VaAKAq2S01enXfeD2i5dP1nWl3R/sb2CDZBzwJI
+  1m5oXlcWObycDChP7mzjNZn8CZcE2ywDjYLsCxG2u2wu5QddEoNW72OLj8wvR4vC
+  E8yukGrfLbmp+v6siwQ3m82PCKaX7mfbW8wtY+uq+b+sWzhNCgCux61G/TCzI8dz
+  5xk43+r65mHEPrwxjWsEHPJtxAoAtXvWpbxkGNGOeZiyJqHTyP1ZL3OlYTkQpMUY
+  MzHy2oty5yfnWC3sS8TciNcKR2MaxeWkwuTFT5L0GX6vpF2yinYWRCLmV/9a/SoL
+  AgMBAAGjOTA3MAkGA1UdEwQCMAAwCwYDVR0PBAQDAgSwMB0GA1UdDgQWBBTCpEDw
+  xD7IEt5P8+vEgQnDK81lfTANBgkqhkiG9w0BAQUFAAOCAQEAbhpIXJHpA4a3gOI/
+  DRWoQQZ+LVz6Kh4Gt4x8BqMAPn7aa5Gkl/5ltLO5PBzdKu7qzYgaMi6UNcDG3ia0
+  Tc3MCn88Vo6/xGxkvJZ6XXkwpGa9ZcFUCPkyZLU3pXjmsbhuoTcsRDd5Imb5vZFO
+  ApK2lZ7SXQ8XhpRhDpSH4Z/VnIocICeyPtcoYS8pSm4SApr7dhS2HpbbmFy8lSu6
+  fyKOdYPaoYrjXOTnlYjbeAvrxOsKn9XM8OYyjv5blnqQ5b2+J26BRrPa7nl1Xnef
+  bhkICrEt+qR6RqsKWvxBaoN3oQcbto4JrFiqsqOBLb0YT5olubd/oM1RK4S1vH+t
+  mua6xQ==
+  -----END CERTIFICATE-----
+
+date: 2009-04-19 00:00:00 -04:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: rghost
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 0.8.3
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: rghost_barcode
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: "0.8"
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: parseline
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.0.2
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: newgem
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.3.0
+    version: 
+- !ruby/object:Gem::Dependency 
+  name: hoe
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.8.0
+    version: 
+description: "Gem para emiss\xC3\xA3o de bloquetos de cobran\xC3\xA7a de bancos brasileiros."
+email: 
+- kivanio@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- History.txt
+- Manifest.txt
+- README.rdoc
+- website/index.txt
+files: 
+- History.txt
+- Manifest.txt
+- README.rdoc
+- Rakefile
+- brcobranca.gemspec
+- config/website.yml
+- lib/brcobranca.rb
+- lib/brcobranca/arquivos/logos/bb.jpg
+- lib/brcobranca/arquivos/logos/hsbc.jpg
+- lib/brcobranca/arquivos/logos/itau.jpg
+- lib/brcobranca/arquivos/templates/modelo_generico.eps
+- lib/brcobranca/boleto/banco_brasil.rb
+- lib/brcobranca/boleto/banco_hsbc.rb
+- lib/brcobranca/boleto/banco_itau.rb
+- lib/brcobranca/boleto/base.rb
+- lib/brcobranca/boleto/template/rghost.rb
+- lib/brcobranca/boleto/template/util.rb
+- lib/brcobranca/config.rb
+- lib/brcobranca/core_ext.rb
+- lib/brcobranca/currency.rb
+- lib/brcobranca/retorno/retorno_cbr643.rb
+- script/console
+- script/destroy
+- script/generate
+- script/txt2html
+- test/arquivos/CBR64310.RET
+- test/test_banco_brasil.rb
+- test/test_banco_hsbc.rb
+- test/test_banco_itau.rb
+- test/test_base.rb
+- test/test_core_ext.rb
+- test/test_currency.rb
+- test/test_helper.rb
+- test/test_retorno_cbr643.rb
+- website/index.html
+- website/index.txt
+- website/javascripts/rounded_corners_lite.inc.js
+- website/stylesheets/screen.css
+- website/template.html.erb
+has_rdoc: true
+homepage: http://brcobranca.rubyforge.org
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --main
+- README.rdoc
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: brcobranca
+rubygems_version: 1.3.2
+signing_key: 
+specification_version: 3
+summary: "Gem para emiss\xC3\xA3o de bloquetos de cobran\xC3\xA7a de bancos brasileiros."
+test_files: 
+- test/test_banco_brasil.rb
+- test/test_banco_hsbc.rb
+- test/test_banco_itau.rb
+- test/test_base.rb
+- test/test_core_ext.rb
+- test/test_currency.rb
+- test/test_helper.rb
+- test/test_retorno_cbr643.rb

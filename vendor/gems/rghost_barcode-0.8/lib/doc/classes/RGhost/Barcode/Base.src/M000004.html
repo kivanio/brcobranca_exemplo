@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>new (RGhost::Barcode::Base)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File rghost_barcode/rghost_barcode_base.rb, line 165</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">barcode_string</span>,<span class="ruby-identifier">options</span>={})
+      <span class="ruby-identifier">options</span><span class="ruby-operator">||=</span>{}
+      
+      <span class="ruby-ivar">@options</span>=<span class="ruby-identifier">options</span>.<span class="ruby-identifier">dup</span>
+      <span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:x</span>]<span class="ruby-operator">||=</span> <span class="ruby-identifier">:limit_left</span>
+      <span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:y</span>]<span class="ruby-operator">||=</span> <span class="ruby-identifier">:current_row</span>
+      <span class="ruby-ivar">@barcode</span>=<span class="ruby-identifier">barcode_string</span>
+      <span class="ruby-ivar">@text</span>   = <span class="ruby-constant">RGhost</span><span class="ruby-operator">::</span><span class="ruby-constant">Barcode</span><span class="ruby-operator">::</span><span class="ruby-constant">Text</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:text</span>])
+      
+      <span class="ruby-ivar">@guard</span>  = <span class="ruby-constant">RGhost</span><span class="ruby-operator">::</span><span class="ruby-constant">Barcode</span><span class="ruby-operator">::</span><span class="ruby-constant">Guard</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:guard</span>])
+      <span class="ruby-ivar">@border</span> = <span class="ruby-constant">RGhost</span><span class="ruby-operator">::</span><span class="ruby-constant">Barcode</span><span class="ruby-operator">::</span><span class="ruby-constant">Border</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:border</span>])
+      <span class="ruby-ivar">@point</span>=<span class="ruby-constant">RGhost</span><span class="ruby-operator">::</span><span class="ruby-constant">Cursor</span>.<span class="ruby-identifier">translate</span>(<span class="ruby-ivar">@options</span>)
+      <span class="ruby-ivar">@rotate</span>=<span class="ruby-constant">RGhost</span><span class="ruby-operator">::</span><span class="ruby-constant">Cursor</span>.<span class="ruby-identifier">rotate</span> <span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:rotate</span>]
+      <span class="ruby-ivar">@scale</span>=<span class="ruby-constant">RGhost</span><span class="ruby-operator">::</span><span class="ruby-constant">Scale</span>.<span class="ruby-identifier">new</span> <span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:scale</span>][<span class="ruby-value">0</span>],<span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:scale</span>][<span class="ruby-value">1</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@options</span>[<span class="ruby-identifier">:scale</span>]
+      [<span class="ruby-identifier">:scale</span>, <span class="ruby-identifier">:enable</span>, <span class="ruby-identifier">:text</span>,<span class="ruby-identifier">:guard</span>,<span class="ruby-identifier">:border</span>, <span class="ruby-identifier">:x</span>, <span class="ruby-identifier">:y</span>, <span class="ruby-identifier">:rotate</span>].<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@options</span>.<span class="ruby-identifier">delete</span> <span class="ruby-identifier">v</span>}
+      <span class="ruby-keyword kw">super</span>(<span class="ruby-ivar">@options</span>)
+      <span class="ruby-ivar">@self_name</span>=<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/::/</span>).<span class="ruby-identifier">last</span>
+      <span class="ruby-constant">RGhost</span><span class="ruby-operator">::</span><span class="ruby-constant">Config</span><span class="ruby-operator">::</span><span class="ruby-constant">GS</span>[<span class="ruby-identifier">:preload</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@self_name</span>
+    <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>
