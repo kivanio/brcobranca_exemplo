@@ -25,3 +25,153 @@ Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-08 13:26:40) [P
   Parameters: {"commit"=>"Gerar", "authenticity_token"=>"LnfnP467rUG7qJtgDxu9jC9jkWNdwFr1obF7SxacaLs=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"itau"}
 Sending data boleto_itau.pdf
 Completed in 1437ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-19 09:22:24) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (492.7ms)
+Rendered home/_itau (509.0ms)
+Rendered home/_form (1.1ms)
+Rendered home/_bb (28.8ms)
+Rendered home/_form (1.2ms)
+Rendered home/_hsbc (68.4ms)
+Rendered home/_head (63.4ms)
+Rendered home/_sidebar (32.1ms)
+Rendered home/_rodape (2.0ms)
+Completed in 1040ms (View: 1036, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 09:23:01) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"ye5hz6jf3olsY40Tg+RMFFWzurefhpbnZ+K6ns1P8gg=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"hsbc"}
+Sending data boleto_hsbc.pdf
+Completed in 6051ms (View: 3, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/hsbc]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-19 09:54:55) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (394.3ms)
+Rendered home/_itau (402.6ms)
+Rendered home/_form (1.0ms)
+Rendered home/_bb (4.2ms)
+Rendered home/_form (0.9ms)
+Rendered home/_hsbc (4.3ms)
+Rendered home/_head (3.3ms)
+Rendered home/_sidebar (3.8ms)
+Rendered home/_rodape (1.3ms)
+Completed in 635ms (View: 631, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 09:55:00) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"itau"}
+
+NameError (uninitialized constant HomeController::BancoItau):
+  app/controllers/home_controller.rb:16:in `gerar_boleto'
+
+Rendered rescues/_trace (208.5ms)
+Rendered rescues/_request_and_response (3.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 09:55:26) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"png"}, "banco"=>"bb"}
+
+NoMethodError (undefined method `to' for #<BancoBrasil:0x23ecd24>):
+  app/controllers/home_controller.rb:62:in `gerar_boleto'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 09:55:36) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"hsbc"}
+
+NameError (uninitialized constant HomeController::BancoHsbc):
+  app/controllers/home_controller.rb:18:in `gerar_boleto'
+
+Rendered rescues/_trace (72.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-19 09:57:44) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (3.2ms)
+Rendered home/_itau (13.1ms)
+Rendered home/_form (1.0ms)
+Rendered home/_bb (4.9ms)
+Rendered home/_form (1.0ms)
+Rendered home/_hsbc (4.2ms)
+Rendered home/_head (3.5ms)
+Rendered home/_sidebar (3.9ms)
+Rendered home/_rodape (1.1ms)
+Completed in 271ms (View: 264, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 09:57:49) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"itau"}
+Sending data boleto_itau.pdf
+Completed in 3203ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 09:58:04) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"bb"}
+Sending data boleto_bb.pdf
+Completed in 1382ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/bb]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 09:58:10) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"hsbc"}
+Sending data boleto_hsbc.pdf
+Completed in 1286ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/hsbc]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 09:58:19) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"tif"}, "banco"=>"hsbc"}
+Sending data boleto_hsbc.tif
+Completed in 1351ms (View: 4, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/hsbc]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-19 10:08:01) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (3.3ms)
+Rendered home/_itau (11.3ms)
+Rendered home/_form (1.0ms)
+Rendered home/_bb (3.9ms)
+Rendered home/_form (1.1ms)
+Rendered home/_hsbc (4.2ms)
+Rendered home/_head (3.0ms)
+Rendered home/_sidebar (3.7ms)
+Rendered home/_rodape (1.1ms)
+Completed in 242ms (View: 239, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 10:08:05) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"pdf"}, "banco"=>"itau"}
+Sending data boleto_itau.pdf
+Completed in 1201ms (View: 2, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/itau]
+
+
+Processing HomeController#gerar_boleto (for 127.0.0.1 at 2009-04-19 10:08:18) [POST]
+  Parameters: {"commit"=>"Gerar", "authenticity_token"=>"hXtCI4dRHa2R5htzXSQ8IVOOwT7WhOZQMMPlRRD7Gz0=", "boleto"=>{"formato"=>"png"}, "banco"=>"bb"}
+Sending data boleto_bb.png
+Completed in 1256ms (View: 3, DB: 0) | 200 OK [http://localhost/home/gerar_boleto/bb]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-04-19 10:09:50) [GET]
+Rendering template within layouts/brlayout
+Rendering home/index
+Rendered home/_form (1.8ms)
+Rendered home/_itau (2.8ms)
+Rendered home/_form (1.2ms)
+Rendered home/_bb (2.1ms)
+Rendered home/_form (1.1ms)
+Rendered home/_hsbc (1.8ms)
+Rendered home/_head (1.1ms)
+Rendered home/_sidebar (4.6ms)
+Rendered home/_rodape (0.1ms)
+Completed in 30ms (View: 26, DB: 0) | 200 OK [http://localhost/]

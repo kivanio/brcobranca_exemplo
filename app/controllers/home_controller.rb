@@ -6,7 +6,6 @@ class HomeController < ApplicationController
     :pdf => 'application/pdf',
     :jpg => 'image/jpg',
     :tif => 'image/tiff',
-    # :gif => 'image/gif',
     :png => 'image/png'
   }
 
@@ -18,8 +17,7 @@ class HomeController < ApplicationController
     when :bb then  BancoBrasil.new
     when :hsbc then BancoHsbc.new
     end
-    #@boleto=BancoBrasil.new
-    #@boleto.new Uau! isso não funciona não sei pq
+    
     @boleto.cedente = "Kivanio Barbosa"
     @boleto.documento_cedente = "12345678912"
     @boleto.sacado = "Claudio Pozzebom"
@@ -69,8 +67,6 @@ class HomeController < ApplicationController
   end
 
   def boleto_hash
-    # isso não funciona, coloquei um instance_eval na no contrutor Brcobranca::Boleto::Base mais acho que ele precisa passar pelos métodos
-    # Podemos criar depois um Brcobranca::Boleto::Base.load que usa um hash, ou xml ou um arquivo(com parseline)
     @boleto = BancoBrasil.new :cedente => "Kivanio Barbosa",
     :documento_cedente => "12345678912",
     :sacado => "Claudio Pozzebom",
