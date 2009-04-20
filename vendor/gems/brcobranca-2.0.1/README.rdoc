@@ -56,7 +56,7 @@ Veja a documentação em http://brcobranca.rubyforge.org/rdoc
 
 == WIKI
 
-* http://wiki.github.com/kivanio/acts_as_payment
+* http://wiki.github.com/kivanio/brcobranca
 
 == PROBLEMAS? QUERENDO MAIS?
 
