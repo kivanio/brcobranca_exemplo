@@ -16,8 +16,9 @@ class HomeController < ApplicationController
     when :itau then BancoItau.new
     when :bb then  BancoBrasil.new
     when :hsbc then BancoHsbc.new
+    when :real then BancoReal.new
     end
-    
+
     @boleto.cedente = "Kivanio Barbosa"
     @boleto.documento_cedente = "12345678912"
     @boleto.sacado = "Claudio Pozzebom"
@@ -29,7 +30,7 @@ class HomeController < ApplicationController
 
     case banco
     when :itau
-      #     ITAU
+      # ITAU
       # O que diferencia um tipo de boleto de outro, dentro do itáu é o tipo de carteira utilizado.
       @boleto.convenio = "12345"
       @boleto.numero_documento = "102008"

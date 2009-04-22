@@ -1,2 +1,4 @@
 vendor/gems
 vendor/gems/**/*
+log
+log/*
