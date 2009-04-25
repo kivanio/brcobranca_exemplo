@@ -17,6 +17,7 @@ class HomeController < ApplicationController
     when :bb then  BancoBrasil.new
     when :hsbc then BancoHsbc.new
     when :real then BancoReal.new
+    when :bradesco then BancoBradesco.new
     end
 
     @boleto.cedente = "Kivanio Barbosa"
@@ -44,7 +45,6 @@ class HomeController < ApplicationController
       # O que diferencia um tipo de boleto de outro, dentro do HSBC é a quantidade de dígitos do número do documento.
       @boleto.numero_documento = "12345678"
     else
-      @boleto.convenio = "12345"
       @boleto.numero_documento = "102008"
     end
 
