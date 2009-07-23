@@ -42,3 +42,7 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+# Uso exclusivo na RailsPlayground
+# Só use isso se enfretar problemas na detecção correta do GhostScript instalado.
+# RGhost::Config::GS[:path] = "/usr/local/bin/gs"

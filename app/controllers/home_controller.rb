@@ -44,6 +44,7 @@ class HomeController < ApplicationController
     when :hsbc
       # HSBC
       # O que diferencia um tipo de boleto de outro, dentro do HSBC é a quantidade de dígitos do número do documento.
+      @boleto.numero_documento = "102008"
     when :unibanco
       # UNIBANCO
       @boleto.convenio = "1238798"
