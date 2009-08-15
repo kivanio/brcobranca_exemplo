@@ -1,0 +1,19 @@
+<div id="post-19" class="post">
+  <div class="postheader">
+    <div class="commentcount" style="width: 78px;">
+      <a href="#">
+        <div style="border: 1px solid gray; width: 64px;">
+        <%= image_tag '/images/thumb_banespa.png', :width => 64 %>
+      </div>
+    </a>
+  </div>
+  <div class="posttitle" >
+    <h2><a href="http://www.banespa.com.br" target="_blank">Banco Banespa - 033</a></h2>
+    <span class="postmeta">
+      <a href="/docs/Documentacao_Banespa.zip" target="_blank">Especificação</a> |  Em Homologação </span>
+    </div>
+  </div>
+  <div class="postcontent">
+    <%= render :partial => "form", :locals => {:banco => 'banespa'} %>
+  </div>
+</div>

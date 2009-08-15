@@ -19,6 +19,7 @@ class HomeController < ApplicationController
     when :real then BancoReal.new
     when :bradesco then BancoBradesco.new
     when :unibanco then BancoUnibanco.new
+    when :banespa then BancoBanespa.new
     end
 
     @boleto.cedente = "Kivanio Barbosa"
@@ -49,7 +50,13 @@ class HomeController < ApplicationController
       # UNIBANCO
       @boleto.convenio = "1238798"
       @boleto.numero_documento = "7777700168"
+    when :banespa
+      # BANESPA
+      @boleto.numero_documento = "1234567"
+      @boleto.conta_corrente = "0403005"
+      @boleto.convenio = 40013012168
     else
+      @boleto.convenio = "1238798"
       @boleto.numero_documento = "102008"
     end
 
