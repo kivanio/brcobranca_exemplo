@@ -1,26 +1,26 @@
 <%= render :partial => 'head' %>
 
 <body>
-	<div class="container">
-		<div class="span-24" id="top">
-			<div class="span-24" id="contenttop"/></div>
-			<div class="menu"></div>
-		</div>
-		<div class="span-24" id="contentwrapper">
-			<div class="span-22 prepend-1 append-1" id="header">
-				<div class="span-15 prepend-1" id="title">
-					<br/>
-					<br/>
-					<div >
-						<h1>BR Cobrança</h1>
-						<h2>Boletos </h2>
-					</div>
-				</div>
-			</div>
-			<%= yield %>
-			<%= render :partial => 'sidebar' %>
-		</div> <!-- contentwrapper -->
-		<%= render :partial => 'rodape' %>
-	</div>
+  <div class="container">
+    <div class="span-24" id="top">
+      <div class="span-24" id="contenttop"/></div>
+      <div class="menu"></div>
+    </div>
+    <div class="span-24" id="contentwrapper">
+      <div class="span-22 prepend-1 append-1" id="header">
+        <div class="span-15 prepend-1" id="title">
+          <br/>
+          <br/>
+          <div >
+            <h1>BR Cobrança</h1>
+            <h2>Boletos </h2>
+          </div>
+        </div>
+      </div>
+      <%= yield %>
+      <%= render :partial => 'sidebar' %>
+    </div> <!-- contentwrapper -->
+    <%= render :partial => 'rodape' %>
+  </div>
 </body>
 </html>
