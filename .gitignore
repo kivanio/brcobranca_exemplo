@@ -1,4 +1,5 @@
 vendor/gems
 vendor/gems/**/*
 log
-log/*
+log/*config/database.yml
+db/schema.rb
