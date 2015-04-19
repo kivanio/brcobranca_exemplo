@@ -21,3 +21,7 @@ group :development, :test do
   gem 'foreman'
 end
 
+group :production, :staging, :sandbox do
+  gem 'rails_12factor',             '0.0.3'
+  gem 'kgio',                       '2.9.3'
+end
