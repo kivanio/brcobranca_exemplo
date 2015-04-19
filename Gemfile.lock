@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/kivanio/Sites/kivanio/brcobranca
+GIT
+  remote: git://github.com/kivanio/brcobranca.git
+  revision: da79e5bb0a1cdacaa7dedc2d912a6002ec8d4764
+  branch: master
   specs:
     brcobranca (4.0.0)
       activemodel (>= 3)
