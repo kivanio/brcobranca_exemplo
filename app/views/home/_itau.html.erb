@@ -1,0 +1,16 @@
+<div id="post-19" class="post">
+  <div class="postheader">
+    <div class="commentcount" style="width: 78px;">
+        <div style="border: 1px solid gray; width: 64px;">
+          <%= image_tag 'thumb_itau.png', :width => 64 %>
+        </div>
+    </div>
+    <div class="posttitle" >
+      <h2><a href="http://www.itau.com.br">Banco Itaú - 341</a></h2>
+      <span class="postmeta"><a href="/docs/Documentacao_Itau.zip">Especificação</a> |  Homologado </span>
+    </div>
+  </div>
+  <div class="postcontent">
+    <%= render :partial => "form", :locals => {:banco => 'itau'} %>
+  </div>
+</div>

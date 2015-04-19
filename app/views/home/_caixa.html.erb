@@ -1,0 +1,19 @@
+<div id="post-19" class="post">
+  <div class="postheader">
+    <div class="commentcount" style="width: 78px;">
+      <a href="#">
+        <div style="border: 1px solid gray; width: 64px;">
+        <%= image_tag 'thumb_caixa.png', :width => 64 %>
+      </div>
+    </a>
+  </div>
+  <div class="posttitle" >
+    <h2><a href="http://www.caixa.com.br" target="_blank">CAIXA - 104</a></h2>
+    <span class="postmeta">
+      <a href="http://downloads.caixa.gov.br/_arquivos/cobranca_caixa_sigcb/manuais/CODIGO_BARRAS_SIGCB.PDF" target="_blank">Especificação</a> |  Homologado </span>
+    </div>
+  </div>
+  <div class="postcontent">
+    <%= render :partial => "form", :locals => {:banco => 'caixa'} %>
+  </div>
+</div>
