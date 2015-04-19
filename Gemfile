@@ -10,9 +10,7 @@ gem 'rack-canonical-host',        '0.1.0'
 gem "rghost"
 gem "rghost_barcode"
 gem "parseline"
-# gem "brcobranca", :git => "git://github.com/kivanio/brcobranca.git", :branch => "master"
-gem "brcobranca", :path => "/Users/kivanio/Sites/kivanio/brcobranca"
-
+gem "brcobranca", :git => "git://github.com/kivanio/brcobranca.git", :branch => "master"
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
