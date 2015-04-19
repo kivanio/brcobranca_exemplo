@@ -1,0 +1,17 @@
+/* For old browsers that can't render png with alpha channel */
+
+#contenttop {
+  background: transparent image-url('topbg-ns.gif') no-repeat 0 0;
+}
+
+#contentwrapper {
+  background: transparent image-url('contentbg-ns.gif') repeat-y 0 0;
+}
+
+#footer {
+  background: image-url('bottombg-ns.gif') no-repeat 0 0;
+}
+
+#introicon {
+  display: none;
+}
