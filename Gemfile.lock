@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/kivanio/brcobranca.git
-  revision: da79e5bb0a1cdacaa7dedc2d912a6002ec8d4764
+  revision: 6a86951daab837a02a4ad5aaf12abce34945ec43
   branch: master
   specs:
-    brcobranca (4.0.0)
+    brcobranca (4.1.0)
       activemodel (>= 3)
       parseline (~> 1.0.3)
       rghost (= 0.9.5)
