@@ -27,6 +27,10 @@ class HomeController < ApplicationController
                 Brcobranca::Boleto::Caixa.new
               when :sicredi then
                 Brcobranca::Boleto::Sicredi.new
+              when :sicoob then
+                Brcobranca::Boleto::Sicoob.new
+              when :banestes then
+                Brcobranca::Boleto::Banestes.new
               end
 
     @boleto.cedente = "Kivanio Barbosa"
@@ -62,12 +66,17 @@ class HomeController < ApplicationController
     when :sicredi
       @boleto.byte_idt = "2"
       @boleto.posto = "18"
+      
+    when :sicoob
+      @boleto.convenio = "1238798"
+    when :banestes
+      @boleto.variacao = "2"
     else
       @boleto.convenio = "1238798"
     end
 
     @boleto.numero_documento = "111"
-    @boleto.dias_vencimento = 5
+    @boleto.data_vencimento = "2008-02-01".to_date
     @boleto.data_documento = "2008-02-01".to_date
     @boleto.instrucao1 = "Pagável na rede bancária até a data de vencimento."
     @boleto.instrucao2 = "Juros de mora de 2.0% mensal(R$ 0,09 ao dia)"
@@ -96,7 +105,7 @@ class HomeController < ApplicationController
       :conta_corrente => "61900",
       :convenio => "1238798",
       :numero_documento => "7777700168",
-      :dias_vencimento => 5,
+      :data_vencimento => "2008-02-01".to_date,
       :data_documento => "2008-02-01".to_date,
       :instrucao1 => "Pagável na rede bancária até a data de vencimento.",
       :instrucao2 => "Juros de mora de 2.0% mensal(R$ 0,09 ao dia)",
@@ -119,7 +128,7 @@ class HomeController < ApplicationController
       :conta_corrente => "61900",
       :convenio => "1238798",
       :numero_documento => "7777700168",
-      :dias_vencimento => 5,
+      :data_vencimento => "2008-02-01".to_date,
       :data_documento => "2008-02-01".to_date,
       :instrucao1 => "Pagável na rede bancária até a data de vencimento.",
       :instrucao2 => "Juros de mora de 2.0% mensal(R$ 0,09 ao dia)",
