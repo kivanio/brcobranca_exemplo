@@ -3,17 +3,17 @@
     <div class="commentcount" style="width: 78px;">
       <a href="#">
         <div style="border: 1px solid gray; width: 64px;">
-        <%= image_tag 'boleto_bb.jpg', :width => 64 %>
+        <%= image_tag 'boleto_cecred.jpg', :width => 64 %>
       </div>
     </a>
   </div>
   <div class="posttitle" >
-    <h2><a href="http://www.bb.com.br">Banco do Brasil - 001</a></h2>
+    <h2><a href="http://www.sicredi.com.br">Cecred - 085</a></h2>
     <span class="postmeta">
-      <a href="/docs/Documentacao_BB.zip">Especificação</a> |  Homologado </span>
+     <!-- <a href="/docs/Documentacao_Unibanco.zip">Especificação</a> |--> Homologado </span>
     </div>
   </div>
   <div class="postcontent">
-    <%= render :partial => "form", :locals => {:banco => 'bb'} %>
+    <%= render :partial => "form", :locals => {:banco => 'cecred'} %>
   </div>
 </div>

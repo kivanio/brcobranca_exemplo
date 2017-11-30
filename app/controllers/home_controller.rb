@@ -13,31 +13,43 @@ class HomeController < ApplicationController
     banco=params[:banco].to_sym
 
     @boleto = case banco
-              when :itau then
+              when :itau
                 Brcobranca::Boleto::Itau.new
-              when :bb then
+              when :bb
                 Brcobranca::Boleto::BancoBrasil.new
-              when :hsbc then
+              when :hsbc
                 Brcobranca::Boleto::Hsbc.new
-              when :santander then
+              when :santander
                 Brcobranca::Boleto::Santander.new
-              when :bradesco then
+              when :bradesco
                 Brcobranca::Boleto::Bradesco.new
-              when :caixa then
+              when :caixa
                 Brcobranca::Boleto::Caixa.new
-              when :sicredi then
+              when :sicredi
                 Brcobranca::Boleto::Sicredi.new
-              when :sicoob then
+              when :sicoob
                 Brcobranca::Boleto::Sicoob.new
-              when :banestes then
+              when :banestes
                 Brcobranca::Boleto::Banestes.new
+              when :brasilia
+                Brcobranca::Boleto::BancoBrasilia.new
+              when :bnb
+                Brcobranca::Boleto::BancoNordeste.new
+              when :banrisul
+                Brcobranca::Boleto::Banrisul.new
+              when :cecred
+                Brcobranca::Boleto::Cecred.new
+              when :credisis
+                Brcobranca::Boleto::Credisis.new
+              when :unicred
+                Brcobranca::Boleto::Unicred.new
               end
 
-    @boleto.cedente = "Kivanio Barbosa"
+    @boleto.cedente = "Alipio Barbosa"
     @boleto.documento_cedente = "12345678912"
-    @boleto.sacado = "Claudio Pozzebom"
+    @boleto.sacado = "Julio Pozzebom"
     @boleto.sacado_documento = "12345678900"
-    @boleto.avalista = "Kivanio Barbosa"
+    @boleto.avalista = "Americo Barbosa"
     @boleto.avalista_documento = "12345678912"
     @boleto.valor = 11135.00
     @boleto.agencia = "4042"
@@ -56,7 +68,7 @@ class HomeController < ApplicationController
     when :hsbc
       # HSBC
       # O que diferencia um tipo de boleto de outro, dentro do HSBC é a quantidade de dígitos do número do documento.
-      @boleto.numero_documento = "102008"
+      @boleto.nosso_numero = "102008"
     when :unibanco
       # UNIBANCO
       @boleto.convenio = "1238798"
@@ -66,18 +78,29 @@ class HomeController < ApplicationController
     when :sicredi
       @boleto.byte_idt = "2"
       @boleto.posto = "18"
-      
+      @boleto.convenio = "12387"
     when :sicoob
       @boleto.convenio = "1238798"
     when :banestes
       @boleto.variacao = "2"
+      @boleto.digito_conta_corrente = "2"
+    when :unicred
+      @boleto.byte_idt = "2"
+      @boleto.posto = "18"
+      @boleto.convenio = "12387"
+    when :bnb
+      @boleto.digito_conta_corrente = "2"
+    when :cecred
+      @boleto.convenio = "12387"
+    when :credisis
+      @boleto.codigo_cedente = "1238"
+      @boleto.convenio = "12387"
     else
       @boleto.convenio = "1238798"
     end
 
-    @boleto.numero_documento = "111"
+    @boleto.nosso_numero = "111"
     @boleto.data_vencimento = "2008-02-01".to_date
-    @boleto.data_documento = "2008-02-01".to_date
     @boleto.instrucao1 = "Pagável na rede bancária até a data de vencimento."
     @boleto.instrucao2 = "Juros de mora de 2.0% mensal(R$ 0,09 ao dia)"
     @boleto.instrucao3 = "DESCONTO DE R$ 29,50 APÓS 05/11/2006 ATÉ 15/11/2006"
@@ -85,6 +108,7 @@ class HomeController < ApplicationController
     @boleto.instrucao5 = "Após vencimento pagável somente nas agências do Banco do Brasil"
     @boleto.instrucao6 = "ACRESCER R$ 4,00 REFERENTE AO BOLETO BANCÁRIO"
     @boleto.sacado_endereco = "Av. Rubéns de Mendonça, 157 - 78008-000 - Cuiabá/MT"
+    @boleto.cedente_endereco = "Av. Rubéns de Mendonça, 1000 - 78008-000 - Cuiabá/MT"
 
     formato=params[:boleto][:formato].to_sym
     headers['Content-Type']=FORMATOS_SUPORTADOS[formato]
@@ -104,7 +128,7 @@ class HomeController < ApplicationController
       :agencia => "4042",
       :conta_corrente => "61900",
       :convenio => "1238798",
-      :numero_documento => "7777700168",
+      :nosso_numero => "7777700168",
       :data_vencimento => "2008-02-01".to_date,
       :data_documento => "2008-02-01".to_date,
       :instrucao1 => "Pagável na rede bancária até a data de vencimento.",
@@ -127,7 +151,7 @@ class HomeController < ApplicationController
       :agencia => "4042",
       :conta_corrente => "61900",
       :convenio => "1238798",
-      :numero_documento => "7777700168",
+      :nosso_numero => "7777700168",
       :data_vencimento => "2008-02-01".to_date,
       :data_documento => "2008-02-01".to_date,
       :instrucao1 => "Pagável na rede bancária até a data de vencimento.",
