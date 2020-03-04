@@ -73,7 +73,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     parseline (1.0.3)
     public_suffix (3.0.1)
-    puma (3.11.0)
+    puma (3.12.4)
     rack (1.6.8)
     rack-canonical-host (0.2.3)
       addressable (> 0, < 3)
