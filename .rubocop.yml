@@ -1,0 +1,36 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - config/puma.rb
+    - config/routes.rb
+    - db/schema.rb
+    - db/migrate/*
+
+Rails:
+  Enabled: true
+  TargetRailsVersion: 6.0
+
+Rails/UnknownEnv:
+  Environments: ["development", "test", "production"]
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true

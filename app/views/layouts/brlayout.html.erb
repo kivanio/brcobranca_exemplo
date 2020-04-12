@@ -1,9 +1,9 @@
-<%= render :partial => 'head' %>
-
-<body>
-  <div class="container">
-    <div class="span-24" id="top">
-      <div class="span-24" id="contenttop"/></div>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+  <%= render :partial => 'head' %>
+  <body>
+    <div class="container">
+      <div class="span-24" id="top">
+        <div class="span-24" id="contenttop"/></div>
       <div class="menu"></div>
     </div>
     <div class="span-24" id="contentwrapper">
@@ -19,7 +19,8 @@
       </div>
       <%= yield %>
       <%= render :partial => 'sidebar' %>
-    </div> <!-- contentwrapper -->
+    </div>
+    <!-- contentwrapper -->
     <%= render :partial => 'rodape' %>
   </div>
 </body>
